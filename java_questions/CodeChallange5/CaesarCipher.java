@@ -1,7 +1,7 @@
 package java_questions.CodeChallange5;
 
 public class CaesarCipher {
-    public staic String encrypt(String txt,int shift){
+    public static String encrypt(String txt,int shift){
         StringBuilder sb=new StringBuilder();
         for(char ch:txt.toCharArray()){
             if(ch>='A' && ch<='Z'){

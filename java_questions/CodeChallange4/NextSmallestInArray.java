@@ -12,7 +12,7 @@ public class NextSmallestInArray {
                 }
             }
             if(i>0){System.out.print(" ");}
-            System.out.println(ele);;
+            System.out.println(ele);
         }
     }
 }

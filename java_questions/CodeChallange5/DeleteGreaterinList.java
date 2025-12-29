@@ -7,7 +7,7 @@ public class DeleteGreaterinList {
         if(head==null){
             return null;
         }
-        if(head.data=>x && head.next!=null){
+        if(head.data<=x && head.next!=null){
             head=head.next;
         }
         Node curr=head;
