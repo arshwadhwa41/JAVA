@@ -1,0 +1,38 @@
+package Testpad.Sorting-1;
+
+public class NumberOfSwapsInSelectionSort {
+    public static int selectionswaps(int arr[],int n){
+        int count=0;
+        for(int i=0;i<n-1;i++){
+            int minind=i;
+            for(int j=i+1;j<n;j++){
+                if(arr[j]<arr[minind]){
+                    minind=j;
+                }
+            }
+            if(minind!=i){
+                int tmp=arr[minind];
+                arr[minind]=arr[i];
+                arr[i]=tmp;
+                count++;
+            }
+        }
+        return count;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+
+        for(int i = 0; i < t; i++){
+            int n = sc.nextInt();
+            int[] arr = new int[n];
+
+            for(int j = 0; j < n; j++){
+                arr[j] = sc.nextInt();
+            }
+
+            int x = selectionswaps(arr, n);
+            System.out.println(x);
+        }
+    }    
+}

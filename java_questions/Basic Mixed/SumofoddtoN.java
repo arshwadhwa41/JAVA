@@ -1,0 +1,22 @@
+package java_questions;
+
+import java.util.Scanner;
+
+public class SumofoddtoN {
+    public static void sum() {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("ENTER Nth NUMBER:");
+        int n=sc.nextInt();
+
+        int sum=0;
+
+        for(int i=1;i<=n;i++){
+            if(i%2!=0){sum+=i;}
+        }
+        System.out.println("SUM OF ODD NUMBERS TILL NTH TERM :"+sum);
+        sc.close();   
+    }
+    public static void main(String[] args) {
+        sum();
+    }
+}

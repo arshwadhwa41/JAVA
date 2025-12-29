@@ -1,0 +1,43 @@
+package Testpad.Stack-1;
+
+public class arrayimplementation {
+    class CQStack
+{
+  public int maxSize; // size of stack array
+  public int[] stackArray;
+  public int top; // top of stack
+
+  public CQStack(int s) // constructor
+  {
+      maxSize=s;
+      stackArray=new int[maxSize];
+      top=-1;
+  }
+
+  public void push(int j) // put item on top of stack
+  {
+      if(isFull()){
+          return;
+      }
+      stackArray[++top]=j;
+  }
+  
+  public int pop() // take item from top of stack
+  {
+      if(isEmpty()){
+          return -1;
+      }
+      return stackArray[top--];
+  }
+
+  public boolean isEmpty() // true if stack is empty
+  {
+      return top==-1;
+  }
+
+  public boolean isFull() // true if stack is full
+  {
+      return top==maxSize-1;
+  }
+}   
+}

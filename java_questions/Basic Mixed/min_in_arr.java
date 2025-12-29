@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class min_in_arr {
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+        int arr[]={1,6,3,7,3};
+        int min=arr[0];
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]<min){
+                min=arr[i];
+            }
+        }
+        System.out.println("minimum:"+min);
+    }
+}
